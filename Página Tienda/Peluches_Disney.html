@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeddyStore</title>
+    <header>
+        <div class="menu">
+            <button class="menu-btn">Menú</button>
+            <ul class="menu-items">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="Peluches_pokemon.html">Pokémon</a></li>
+              <li><a href="Peluches_hello_kitty.html">Hello Kitty</a></li>
+              <li><a href="Peluches_Disney.html">Disney</a></li>
+              <li><a href="Peluches_Amongus.html">Among Us</a></li>
+              <li><a href="Peluches_Lol.html">League of Legends</a></li>
+              <li><a href="Peluches_Varios.html">Otros</a></li>
+            </ul>
+          </div>
+        <a href="index.html">
+            <img src="TeddyStore.png" alt="logo de mi sitio web" id="logo">
+        </a>
+        <h1>TeddyStore</h1>
+        <div id="carrito" class="carrito">
+            <img src="carrito.png" onclick="toggleCarrito()" id="carrito">
+            <div id="carrito-desplegable" class="carrito-desplegable">
+                <h2>Carrito de Compras</h2>
+                <ul id="lista-carrito"></ul>
+                <p>Total: $<span id="total-carrito">0</span></p>
+            </div>
+        </div>
+        
+    </header>
+</head>
+<body>
+
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img
+                    src="Stitch.webp"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2> Stitch Gigante </h2>
+                <p class="price">$32.990</p>
+                <button onclick="agregarAlCarrito(32990,'Peluche Stitch Gigante')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="pato_donald.webp"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Pato Donald 30 Cm</h2>
+                <p class="price">$26,990</p>
+                <button onclick="agregarAlCarrito(26990,'Peluche Pato Donald 30cm')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="Sulley.webp"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Sullivan </h2>
+                <p class="price">$28,990</p>
+                <button onclick="agregarAlCarrito(28990,'Peluche Sullivan')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="Pluto.webp"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Pluto Gigante</h2>
+                <p class="price">$35,990</p>
+                <button onclick="agregarAlCarrito(35990,'Peluche Pluto Gigante')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="Mike_Wazowski.webp"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Mike Wazowski</h2>
+                <p class="price">$26,990</p>
+                <button onclick="agregarAlCarrito(26990,'Peluche Mike Wazowski')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="Winnie_the_pooh.webp"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Winnie The Pooh</h2>
+                <p class="price">$12,990</p>
+                <button onclick="agregarAlCarrito(12990,'Peluche Winnie The Pooh')">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>&copy; 2024 TeddyStore</p>
+    <ul>
+      <li><a href="commingsoont.html">Acerca de</a></li>
+      <li><a href="commingsoont.html">Redes Sociales</a></li>
+    </ul>
+  </footer>
+  </html>

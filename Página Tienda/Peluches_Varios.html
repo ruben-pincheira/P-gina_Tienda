@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeddyStore</title>
+    <header>
+        <div class="menu">
+            <button class="menu-btn">Menú</button>
+            <ul class="menu-items">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="Peluches_pokemon.html">Pokémon</a></li>
+              <li><a href="Peluches_hello_kitty.html">Hello Kitty</a></li>
+              <li><a href="Peluches_Disney.html">Disney</a></li>
+              <li><a href="Peluches_Amongus.html">Among Us</a></li>
+              <li><a href="Peluches_Lol.html">League of Legends</a></li>
+              <li><a href="Peluches_Varios.html">Otros</a></li>
+            </ul>
+          </div>
+        <a href="index.html">
+            <img src="TeddyStore.png" alt="logo de mi sitio web" id="logo">
+        </a>
+        <h1>TeddyStore</h1>
+        <div id="carrito" class="carrito">
+            <img src="carrito.png" onclick="toggleCarrito()" id="carrito">
+            <div id="carrito-desplegable" class="carrito-desplegable">
+                <h2>Carrito de Compras</h2>
+                <ul id="lista-carrito"></ul>
+                <p>Total: $<span id="total-carrito">0</span></p>
+            </div>
+        </div>
+        
+    </header>
+</head>
+<body>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="nutria.jpg" alt="Peluche Nutria" />
+            </figure>
+            <div class="info-product">
+                <h2>Peluche Nutria</h2>
+                <p class="price">$12,000</p>
+                <button onclick="agregarAlCarrito(12000, 'Peluche Nutria')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="conejo.jpg"
+                    alt="Conejo"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Peluche Conejo</h2>
+                <p class="price">$14,000</p>
+                <button onclick="agregarAlCarrito(14000,'Peluche Conejo')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="ardilla.jpg"
+                    alt="Peluche Ardilla"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Peluche Ardilla</h2>
+                <p class="price">$12,000</p>
+                <button onclick="agregarAlCarrito(12000,'Peluche Ardill')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="rana.jpg"
+                    alt="Peluche Rana"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Peluche Rana</h2>
+                <p class="price">$12,000</p>
+                <button onclick="agregarAlCarrito(12000,'Peluche Rana')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="vaca.jpg"
+                    alt="Peluche vaca"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Peluche Vaca</h2>
+                <p class="price">$12,000</p>
+                <button onclick="agregarAlCarrito(12000,'Peluche Vaca')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="koala.jpg"
+                    alt="Peluche koala"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Peluche Koala</h2>
+                <p class="price">$15,000</p>
+                <button onclick="agregarAlCarrito(15000,'Peluche Koala')">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+<footer>
+    <p>&copy; 2024 TeddyStore</p>
+    <ul>
+      <li><a href="commingsoont.html">Acerca de</a></li>
+      <li><a href="commingsoont.html">Redes Sociales</a></li>
+    </ul>
+  </footer>
+  </html>

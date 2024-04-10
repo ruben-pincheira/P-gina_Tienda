@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeddyStore</title>
+    <header>
+        
+        <a href="index.html">
+            <img src="TeddyStore.png" alt="logo de mi sitio web" id="logo">
+        </a>
+        <h1>TeddyStore</h1>
+        <div id="carrito" class="carrito">
+            <img src="carrito.png" onclick="toggleCarrito()" id="carrito">
+            <div id="carrito-desplegable" class="carrito-desplegable">
+                <h2>Carrito de Compras</h2>
+                <ul id="lista-carrito"></ul>
+                <p>Total: $<span id="total-carrito">0</span></p>
+            </div>
+        </div>
+        
+    </header>
+</head>
+
+<body>
+
+    <div class="container-items">
+        <div class="item">
+                <img
+                    src="Among_us_angel.jpg"
+                    alt="producto"
+                />
+            <div class="info-product">
+                <h2> Among us Angel </h2>
+                <p class="price">$12.990</p>
+                <button onclick="agregarAlCarrito(12990,'Peluche Among us Angel')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="Among_us_flor.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Among us Flor</h2>
+                <p class="price">$16,990</p>
+                <button onclick="agregarAlCarrito(16990,'Peluche Among us Flor')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="Among_us_gorro.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Among us Gorro </h2>
+                <p class="price">$9,990</p>
+                <button onclick="agregarAlCarrito(9990,'Peluche Among us Gorro')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="Among_us_impostor.avif"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Among us Impostor</h2>
+                <p class="price">$15,990</p>
+                <button onclick="agregarAlCarrito(15990,'Peluche Among us Impostor')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="Among_us_jamon.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Among us Muerto</h2>
+                <p class="price">$8,990</p>
+                <button onclick="agregarAlCarrito(8990,'Peluche Among us Muerto')">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="Among_us_negro.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Among us Negro</h2>
+                <p class="price">$14,990</p>
+                <button onclick="agregarAlCarrito(14990,'Peluche Among us Negro')">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>&copy; 2024 TeddyStore</p>
+    <ul>
+      <li><a href="/acerca-de">Acerca de</a></li>
+      <li><a href="/rrss">Redes Sociales</a></li>
+    </ul>
+  </footer>
+  <script src="script.js"></script>
+  </html>
